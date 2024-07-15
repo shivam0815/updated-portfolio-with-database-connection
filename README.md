@@ -45,6 +45,7 @@ Clone the repository:
 
 Copy code
 git clone https://github.com/yourusername/your-portfolio.git
+
 cd your-portfolio
 
 2 Install dependencies:
@@ -52,7 +53,11 @@ cd your-portfolio
 
 Copy code
 npm install   # For Node.js projects
+
+or
 pip install -r requirements.txt  # For Python projects
+
+or
 bundle install  # For Ruby projects
 
 3 Environment Variables:
@@ -61,12 +66,15 @@ Create a .env file in the root directory and add the following environment varia
 
 Copy code
 DATABASE_URL=your-database-url
+
 SECRET_KEY=your-secret-key
 
 4🗄️ Database Configuration
+
 Database Setup:
 
 Ensure you have the appropriate database management system installed (MySQL/PostgreSQL/MongoDB).
+
 Create a new database for your portfolio.
 
 4.1 Migrate Database:
@@ -74,6 +82,7 @@ Create a new database for your portfolio.
 
 Copy code
 npx sequelize db:migrate  # For Sequelize (Node.js)
+
 python manage.py migrate  # For Django (Python)
 
 5💻 Usage
@@ -81,6 +90,7 @@ Run the Application:
 
 Copy code
 npm start   # For Node.js projects
+
 python manage.py runserver  # For Django projects
 
 Access the Portfolio:
